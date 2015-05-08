@@ -3,10 +3,9 @@ package com.ssebs.mahapp;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -14,67 +13,139 @@ import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends ActionBarActivity
 {
-	private MediaPlayer mediaPlayerInception, mediaPlayerStreetFighter, mediaPlayerFusRoDah, mediaPlayer321, mediaPlayerExplosion, mediaPlayerHorn;
 
 	@Override
 	protected void onCreate (Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//mediaPlayerInception = MediaPlayer.create(this, R.raw.bwah);
-		mediaPlayerFusRoDah = MediaPlayer.create(this, R.raw.fusrodah);
-		mediaPlayerStreetFighter = MediaPlayer.create(this, R.raw.hadouken);
-		mediaPlayer321 = MediaPlayer.create(this, R.raw.trip);
-		mediaPlayerExplosion = MediaPlayer.create(this, R.raw.explosion);
-		mediaPlayerHorn = MediaPlayer.create(this, R.raw.horn);
+
+		//add api
 		AdView mAdView = (AdView) findViewById(R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		mAdView.loadAd(adRequest);
+	}
 
+	public void pressBanana (View view)
+	{
+		MediaPlayer.create(this, R.raw.banana).start();
+	}
+
+	public void pressBitchWhere (View view)
+	{
+		MediaPlayer.create(this, R.raw.bitch_where).start();
+	}
+
+	public void pressBlind (View view)
+	{
+		MediaPlayer.create(this, R.raw.blind).start();
 	}
 
 	public void pressInception (View view)
 	{
-		Toast.makeText(this, "Bwaah!!", Toast.LENGTH_SHORT).show();
-		mediaPlayerInception = MediaPlayer.create(this, R.raw.bwah);
-		mediaPlayerInception.start();
-
+		MediaPlayer.create(this, R.raw.bwah).start();
 	}
 
-	public void press321 (View view)
+	public void pressDaamn (View view)
 	{
-		Toast.makeText(this, "3,2,1!!", Toast.LENGTH_SHORT).show();
-
-		mediaPlayer321.start();
+		MediaPlayer.create(this, R.raw.daamn).start();
 	}
 
-	public void pressHorn (View view)
+	public void pressNuts (View view)
 	{
-		Toast.makeText(this, "OAHHHH!!", Toast.LENGTH_SHORT).show();
-
-		mediaPlayerHorn.start();
-	}
-
-	public void pressStreetFighter (View view)
-	{
-		Toast.makeText(this, "HADOUKEN!!", Toast.LENGTH_SHORT).show();
-
-		mediaPlayerStreetFighter.start();
-	}
-
-	public void pressFusRoDah (View view)
-	{
-		Toast.makeText(this, "FUS RO DAH!!", Toast.LENGTH_SHORT).show();
-
-		mediaPlayerFusRoDah.start();
+		MediaPlayer.create(this, R.raw.deez_nuts).start();
 	}
 
 	public void pressExplosion (View view)
 	{
-		Toast.makeText(this, "BOOM!!", Toast.LENGTH_SHORT).show();
-
-		mediaPlayerExplosion.start();
+		MediaPlayer.create(this, R.raw.explosion).start();
 	}
+
+	public void pressFleek (View view)
+	{
+		MediaPlayer.create(this, R.raw.fleek).start();
+	}
+
+	public void pressFusRoDah (View view)
+	{
+		MediaPlayer.create(this, R.raw.fusrodah).start();
+	}
+
+	public void pressStreetFighter (View view)
+	{
+		MediaPlayer.create(this, R.raw.hadouken).start();
+	}
+
+	public void pressHorn (View view)
+	{
+		MediaPlayer.create(this, R.raw.horn).start();
+	}
+
+	public void pressIggy (View view)
+	{
+		MediaPlayer.create(this, R.raw.iggy).start();
+	}
+
+	public void pressJeff (View view)
+	{
+		MediaPlayer.create(this, R.raw.jeff).start();
+	}
+
+	public void pressLookLikeUh (View view)
+	{
+		MediaPlayer.create(this, R.raw.look_like_uhh).start();
+	}
+
+	public void pressNoNgga (View view)
+	{
+		MediaPlayer.create(this, R.raw.no_ngga).start();
+	}
+
+	public void pressNotMyDad (View view)
+	{
+		MediaPlayer.create(this, R.raw.not_my_dad).start();
+	}
+
+	public void pressPorsche (View view)
+	{
+		MediaPlayer.create(this, R.raw.porsche).start();
+	}
+
+	public void pressRavioli (View view)
+	{
+		MediaPlayer.create(this, R.raw.ravioli).start();
+	}
+
+	public void pressRlyNgga (View view)
+	{
+		MediaPlayer.create(this, R.raw.really_ngga).start();
+	}
+
+	public void pressSurprise (View view)
+	{
+		MediaPlayer.create(this, R.raw.surprise_mf).start();
+	}
+
+	public void press321 (View view)
+	{
+		MediaPlayer.create(this, R.raw.trip).start();
+	}
+
+	public void pressTwentyOne (View view)
+	{
+		MediaPlayer.create(this, R.raw.twenty_one).start();
+	}
+
+	public void pressWhip (View view)
+	{
+		MediaPlayer.create(this, R.raw.whip).start();
+	}
+
+	public void pressWrist (View view)
+	{
+		MediaPlayer.create(this, R.raw.wrist).start();
+	}
+
 
 	public void toWeb (View view)
 	{
@@ -84,26 +155,8 @@ public class MainActivity extends ActionBarActivity
 	}
 
 	@Override
-	public void onResume ()
-	{
-		mediaPlayer321 = MediaPlayer.create(this, R.raw.trip);
-		mediaPlayerFusRoDah = MediaPlayer.create(this, R.raw.fusrodah);
-		mediaPlayerStreetFighter = MediaPlayer.create(this, R.raw.hadouken);
-		mediaPlayerInception = MediaPlayer.create(this, R.raw.bwah);
-		mediaPlayerInception = MediaPlayer.create(this, R.raw.explosion);
-
-		super.onResume();
-	}
-
-	@Override
 	public void onPause ()
 	{
-//		mediaPlayerInception.release();
-//		mediaPlayerInception = null;
-//
-//
-//		mediaPlayerInception.release();
-//		mediaPlayerInception = null;
 		super.onPause();
 	}
 

@@ -17,96 +17,227 @@
         android:layout_centerHorizontal="true"
         android:text="ssebs soundboard"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:typeface="sans"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pressInception"
-        android:text="BWAAAH"
         android:typeface="sans"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/adView"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pressStreetFighter"
-        android:text="HADOUKEN"
-        android:typeface="sans"
-        android:layout_below="@+id/button4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"/>
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pressFusRoDah"
-        android:text="FusRoDah"
-        android:typeface="sans"
-        android:layout_below="@+id/button"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"/>
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="press321"
-        android:text="Going on a trip"
-        android:typeface="sans"
-        android:layout_below="@+id/button3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:nestedScrollingEnabled="false"
-        android:onClick="toWeb"
-        android:text="Visit us"
-        android:typeface="sans"
-        android:layout_above="@+id/adView"
-        android:layout_alignParentStart="true"/>
+        android:textStyle="bold"/>
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/textView"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pressExplosion"
-        android:text="EXPLOSION"
-        android:typeface="sans"
-        android:layout_below="@+id/button5"
-        android:layout_alignParentStart="true"
-        android:nestedScrollingEnabled="false"/>
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="pressHorn"
-        android:text="MLG HORNS"
-        android:typeface="sans"
-        android:nestedScrollingEnabled="false"
-        android:layout_below="@+id/button6"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignEnd="@+id/adView"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignStart="@+id/adView"
+        android:layout_below="@+id/adView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressBanana"
+                android:text="Banana"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressBitchWhere"
+                android:text="BITCH WHERE"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressBlind"
+                android:text="BLIND"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressInception"
+                android:text="INCEPTION"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressDaamn"
+                android:text="DAAMN"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressNuts"
+                android:text="DEEZ NUTS"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressExplosion"
+                android:text="EXPLOSION"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressFleek"
+                android:text="FLEEK"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressFusRoDah"
+                android:text="FUS RO DAH"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressStreetFighter"
+                android:text="HADOUKEN"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressHorn"
+                android:text="MLG"
+                android:typeface="sans"
+                />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressIggy"
+                android:text="IGGY"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressJeff"
+                android:text="JEFF"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressLookLikeUh"
+                android:text="MF UHHH"
+                android:typeface="sans"/>
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressNoNgga"
+                android:text="NO N*GGA"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressNotMyDad"
+                android:text="NOT MY DAD"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressPorsche"
+                android:text="PORSCHE"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressRavioli"
+                android:text="RAVIOLI"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressRlyNgga"
+                android:text="REALLY N*GGA"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressSurprise"
+                android:text="SURPRISE MF"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="press321"
+                android:text="EINSTEINS"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressTwentyOne"
+                android:text="TWENTY ONE"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressWhip"
+                android:text="WHATCH ME WHIP"
+                android:typeface="sans"/>
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:onClick="pressWrist"
+                android:text="FLICK OF THAT WRIST"
+                android:typeface="sans"/>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
